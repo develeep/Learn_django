@@ -8,6 +8,7 @@ urlpatterns = [
     path('url/<str:username>/', url_parameter),
     path('fbv/', function_view),
     path('cbv/', class_view.as_view()),
+
     path("", index, name='index'),
     path("posts/", include('posts.urls', namespace='posts')),
 ]
